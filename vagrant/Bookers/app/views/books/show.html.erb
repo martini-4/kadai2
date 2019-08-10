@@ -1,7 +1,14 @@
+
+<div class="syousai">
 <p>
 	<span>Title:</span><%= @book.title %>
 </p>
 <p>
 	<span>Body:</span><%= @book.body %>
 </p>
+</div>
 
+
+<p><%= link_to 'Edit', edit_book_path(@book.id) %></p>
+<p>|</p>
+<p><%= link_to 'Back', new_book_path %></p>

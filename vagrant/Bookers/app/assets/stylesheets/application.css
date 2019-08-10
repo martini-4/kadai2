@@ -19,21 +19,28 @@
 	box-sizing: border-box;
 }
 
-.naiyou{
-	margin-left: 4%;
+
+
+.naiyou p{
+	margin: 30px;
 	color: #333;
 }
-span{
+.naiyou a{
+	color: #333;
+}
+strong{
+	margin: 0;
 	font-weight: bold;
 }
-.link1{
-	margin-left: 4%;
-	color: #333;
-}
+
 a:hover{
 	color: #fff;
 	background-color: black;
 }
+
+
+
+
 
 .title2{
 	margin-bottom: 5px;
@@ -47,3 +54,13 @@ header{
 .main{
 	width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
