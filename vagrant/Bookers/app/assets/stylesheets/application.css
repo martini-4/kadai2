@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+*{
+	margin: 10px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.naiyou{
+	margin-left: 4%;
+	color: #333;
+}
+span{
+	font-weight: bold;
+}
+.link1{
+	margin-left: 4%;
+	color: #333;
+}
+a:hover{
+	color: #fff;
+	background-color: black;
+}
+
+.title2{
+	margin-bottom: 5px;
+}
+header{
+	font-size: 13px;
+	display: inline-block;
+	font-weight: bold;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+.main{
+	width: 100%;
+}
