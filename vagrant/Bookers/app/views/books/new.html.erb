@@ -1,34 +1,42 @@
-<header class="title2">
-<h1>Books</h1>
-</header>
-<table class="main">
-	<tr>
-		<th>Title</th>
-		<th>Body</th>
-	</tr>
-<% @books.each do |book| %>
-
-	<tr>
-		<td><%= book.title %></td>
-		<td><%= book.body %></td>
-		<td><%= link_to "Show", book_path(book.id) %> </td>
-		<td><%= link_to 'Edit', edit_book_path(book.id) %> </td>
-
-	</tr>
+<% if flash[:successfully_destroy] %>
+	<div class="successfully">
+		<%= flash[:successfully_destroy] %>
+	</div>
 <% end %>
-</table>
 
-<h2>New book</h2>
+<body class="new">
+	<header class="title2">
+		<h1>Books</h1>
+	</header>
+	<table class="new-main">
+			<tr>
+				<th>Title</th>
+				<th>Body</th>
+			</tr>
+		<% @books.each do |book| %>
 
-<%= form_for(@book) do |f| %>
+				<tr>
+					<td><%= book.title %></td>
+					<td><%= book.body %></td>
+					<td><%= link_to "Show", book_path(book.id) %>
+					<%= link_to 'Edit', edit_book_path(book.id) %>
+					<%= link_to'Destroy', book_path(book.id), method: :Delete, data: { confirm: 'Are you sure?'} %></td>
+				</tr>
+		<% end %>
+	</table>
 
-<h4>Title</h4>
-<%= f.text_field :title %>
+	<h2 class="title3">New book</h2>
 
-<h4>Body</h4>
-<%= f.text_area :body %>
+	<%= form_for(@book) do |f| %>
 
-<div>
-<%= f.submit 'Create Book' %>
-</div>
-<% end %>
+		<h4>Title</h4>
+		<%= f.text_field :title %>
+
+		<h4>Body</h4>
+		<%= f.text_area :body %>
+
+		<div>
+			<%= f.submit 'Create Book' %>
+		</div>
+	<% end %>
+</body>

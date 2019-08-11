@@ -1,14 +1,28 @@
+<% if flash[:successfully_save] %>
+	<div class="successfully">
+		<%= flash[:successfully_save] %>
+	</div>
+<% end %>
+<% if flash[:successfully_update] %>
+	<div class="successfully">
+		<%= flash[:successfully_update] %>
+	</div>
+<% end %>
 
-<div class="syousai">
-<p>
-	<span>Title:</span><%= @book.title %>
-</p>
-<p>
-	<span>Body:</span><%= @book.body %>
-</p>
+<body class="show-main">
+	<div class="mokuzi1">
+		<p class="show-mokuzi">
+			<span class="mokuzi">Title:</span><%= @book.title %>
+		</p>
+	</div>
+	<p class="show-mokuzi">
+		<span class="mokuzi">Body:</span><%= @book.body %>
+	</p>
 </div>
 
+<div class="link-list">
+	<p class="link"><%= link_to 'Edit', edit_book_path(@book.id) %></p>
+	<p class="link">|</p>
+	<p class="link"><%= link_to 'Back', new_book_path %></p>
 
-<p><%= link_to 'Edit', edit_book_path(@book.id) %></p>
-<p>|</p>
-<p><%= link_to 'Back', new_book_path %></p>
+</body>

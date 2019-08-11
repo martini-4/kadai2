@@ -14,18 +14,33 @@
  *= require_self
  */
 *{
-	margin: 10px;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
-
-
-.naiyou p{
-	margin: 30px;
+body{
 	color: #333;
 }
-.naiyou a{
+a:hover{
+	color: #fff;
+	background-color: black;
+}
+
+/*index*/
+.index-body{
+	margin: 8px;
+	color: #333;
+}
+.index-title{
+	margin: 21px 0;
+}
+.naiyou p{
+	margin: 33px;
+}
+.index-tex{
+	color:  #333;
+}
+a{
 	color: #333;
 }
 strong{
@@ -33,32 +48,67 @@ strong{
 	font-weight: bold;
 }
 
-a:hover{
-	color: #fff;
-	background-color: black;
+
+
+/*new*/
+
+.new{
+	margin: 33px;
 }
 
-
-
-
-
-.title2{
-	margin-bottom: 5px;
-}
 header{
-	font-size: 13px;
+	font-size: 12px;
 	display: inline-block;
 	font-weight: bold;
 	font-family: verdana, arial, helvetica, sans-serif;
+	margin: 17px 0;
 }
-.main{
+.new-main{
+	margin: 0;
 	width: 100%;
 }
+.new-text{
+	color: #333;
+}
+.title3{
+	margin: 17px 0;
+}
+/*show*/
+.successfully{
+	color: green;
+}
+.show-main{
+	margin: 33px;
+}
+.mokuzi1{
+	margin: 0 0 33px 0;
+}
+.show-mokuzi{
+	margin: 33px;
+	font-size: 13px;
+}
+.mokuzi{
+	font-weight: bold;
+}
+.link{
+	font-family: verdana, arial, helvetica, sans-serif;
+	float: left;
+	margin: 0;
+}
 
 
 
-
-
+/*edit*/
+.edit{
+	margin: 33px;
+	}
+.edit-main{
+	margin: 0;
+}
+.edit-main h1{
+	font-size: 23px;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
 
 
 
